@@ -6,7 +6,198 @@
   height: 40vmin;
   pointer-events: none;
 }
+.container{
+  width:100%;
+  display: flex;
+  margin-left: 5px;
+  margin-bottom: 10px;
+  align-items: center;
+  border-bottom:2px red solid;
+  padding-bottom: 15px;
+  padding: 15px;
+  justify-content:space-evenly;
+  flex-wrap: wrap;
+ 
+}
+/* CreateContact */
 
+.close-create-contact {
+  display: block;
+  width: 60px;
+  height: 60px;
+  background-image: url('./icons/arrow-back.svg');
+  color:yellow ;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 30px;
+  font-size: 0;
+  /* z-index: -1; */
+}
+
+.create-contact-form {
+  padding: 20px;
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.create-contact-details {
+  margin-left: 20px;
+}
+
+.create-contact-avatar-input {
+  min-width: 60px;
+  height: 60px;
+  background-color: white;
+  background-image: url('./icons/person.svg');
+  background-size: 32px 32px;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+}
+
+.create-contact-details input {
+  width: 100%;
+  padding: 5px 10px;
+  margin-bottom: 10px;
+  font-size: inherit;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  outline: 0;
+}
+
+
+.create-contact-details button {
+  margin-top: 20px;
+  background: #ccc;
+  padding: 10px;
+  text-transform: uppercase;
+  font-size: inherit;
+  border: none;
+  outline: 0;
+}
+.contact-img{
+  width:5%;
+  padding: 10px;
+  border-radius: 50%;
+
+  
+  height: 50px;
+ background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+
+}
+.items{
+  width:70%;
+  line-height: 10px;
+  color:yellow;
+}
+
+.items p:first-child{
+  color: wheat;
+  font-weight: bold;
+  
+  font-style: italic;
+  text-shadow: 10px 10px rgba(78, 78, 0,0.1);
+  
+}   
+
+.container button{
+  padding: 8px;
+  width: 7%;
+  background-color: rgb(63, 63, 63);
+  color: yellow;
+  overflow-wrap: break-word;
+  margin-right: 10px;
+}
+.container button:last-child{
+  background-color: #282c34;
+  color: aliceblue;
+}
+.Searchbar{
+  width:100%;
+  margin-left: 15px;
+  display: flex;
+  
+ position: relative;
+
+  margin-top: 20px;
+  
+  align-items: center;
+  justify-content: space-around;
+    
+}
+
+.Searchbox{
+ 
+  width:65%;
+  /*background: url(./search.png) no-repeat left ;*/
+  font-size: 20px;
+  padding:10px;
+  text-align: center;
+  
+}
+.icon { 
+  position: absolute;
+  left:18% ;
+  z-index: 5;
+  color:red;
+
+} 
+.Searchbox:focus{
+  background-color: brown;
+  color:yellow;
+  font-size: 30px;
+  
+}
+
+.Searchbar p{
+  width:10%;
+  font-size: 20px;
+  
+}
+.btn{
+  padding: 10px;
+  text-align: center;
+  color: azure;
+  box-shadow: 2px 2px rgb(243, 243, 106);
+  appearance:button;
+  border-top:1.5px solid snow;
+  border-left: 1.5px solid snow;
+  text-decoration: none;
+  background-color: rgba(9, 10, 7, 0.5);
+  flex-grow: 0.2;
+  
+  
+}
+
+
+@media (max-width:600px){
+  .items{
+    width: 40%;
+  }
+  .items p{
+    line-height: 20px;
+  }
+
+  .container{
+    justify-content: space-around;
+    margin-left: -30px;
+
+  }
+  .container button{
+    flex-grow: 0.33;
+  }
+  .Searchbox{
+    width:40%;
+  }
+  .icon{
+    left:25%;
+  }
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
