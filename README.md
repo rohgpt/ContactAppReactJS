@@ -26,11 +26,11 @@ npm start
 
 ## UI
 - Home Layout
-![Show Contact](UI/full.png)
+![Show Contact](UI/full.PNG)
 - Add Contact Layout
-![Add Contact](UI/add.png)
+![Add Contact](UI/add.PNG)
 - Search Contact
-![Search Contact](UI/search.png)
+![Search Contact](UI/search.PNG)
 
 ## Future Scope
 1. Adding DB To project , currently project using nodejs Server for data access, that can be integrated with database to store data.
