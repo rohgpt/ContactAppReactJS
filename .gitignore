@@ -4,8 +4,8 @@
 /node_modules
 /.pnp
 .pnp.js
-/reactnd-contacts-server2/node_modules
-/reactnd-contacts-server2/.DS_Store
+/backend/node_modules
+/backend/.DS_Store
 
 
 # testing
